@@ -34,16 +34,16 @@ nav {
     background-color: lightblue;
     flex-wrap: wrap;
     border-radius: 20px;
-    justify-content: flex-start;
+}
+.card > .col {
+    width: 100%;
+    text-align: center;
 }
 #phone {
     text-align: center;
 }
 .card img {
     width: 50%;
-}
-.card > .col {
-    width: 100%;
 }
 .lilac {
     background-color:mediumslateblue;
@@ -54,4 +54,13 @@ nav {
 .lilac .col {
     width: 100%;
     border-radius: 20px;
+}
+.cards {
+    flex-wrap: wrap;
+    background-color: mediumslateblue;
+    border-radius: 20px;
+    color: white;
+}
+.cards > .col {
+    width: 100%;
 }
