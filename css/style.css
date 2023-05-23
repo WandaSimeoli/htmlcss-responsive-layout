@@ -7,6 +7,7 @@
 }
 :root {
     --bg-color: dodgerblue;
+    --color: mediumslateblue;
 }
 .container {
     margin: 0 auto;
@@ -42,11 +43,16 @@ nav {
 #phone {
     text-align: center;
 }
-.card img {
+.card img, .lilac img{
     width: 50%;
 }
+.white {
+    background-color: white;
+    color: black;
+}
 .lilac {
-    background-color:mediumslateblue;
+    background-color:var(--color);
+    color: white;
 }
 .lilac .row {
     flex-wrap: wrap;
@@ -57,10 +63,19 @@ nav {
 }
 .cards {
     flex-wrap: wrap;
-    background-color: mediumslateblue;
+    background-color:var(--color);
     border-radius: 20px;
     color: white;
 }
 .cards > .col {
     width: 100%;
+}
+.about-us .row {
+    flex-wrap: wrap;
+}
+.container .row .col {
+    width: 100%;
+}
+footer {
+    background-color: black;
 }
