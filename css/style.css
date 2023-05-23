@@ -15,8 +15,8 @@
 }
 .debug {
     border: 1px dashed black;
-    min-height: 100px;
-    min-width: 100px;
+    /* min-height: 100px;
+    min-width: 100px; */
 }
 header {
     background-color: var(--bg-color);
@@ -40,10 +40,11 @@ nav {
     width: 100%;
     text-align: center;
 }
+
 #phone {
     text-align: center;
-}
-.card img, .lilac img{
+} 
+.card img, .lilac img, .cards img, .about-us img{
     width: 50%;
 }
 .white {
@@ -76,6 +77,19 @@ nav {
 .container .row .col {
     width: 100%;
 }
-footer {
+/* footer {
     background-color: black;
+} */
+
+/* Ordine per Mobile First
+    - Caso Base --> Mobile; 
+    - Tablet --> In Media Query min-width: 768px;
+    - Desktop --> In Media Query min-width: 992px;*/
+    @media screen and (min-width: 768px) {
+    .lilac .container .row .col {
+        width: 50%;
+    }
+    .about-us .row {
+        flex-wrap: nowrap;
+    }
 }
