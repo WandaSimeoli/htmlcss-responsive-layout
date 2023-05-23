@@ -5,7 +5,27 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+:root {
+    --bg-color: dodgerblue;
+}
 .container {
-    max-width: ;
     margin: 0 auto;
+}
+.debug {
+    border: 1px dashed black;
+    min-height: 100px;
+    min-width: 100px;
+}
+header {
+    background-color: var(--bg-color);
+}
+.flex {
+    display: flex;
+}
+.row {
+    justify-content: space-between;
+    color: white;
+}
+nav {
+    display: none;
 }
