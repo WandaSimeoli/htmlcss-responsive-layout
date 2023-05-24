@@ -1,0 +1,38 @@
+/* Ordine per Mobile First
+    - Caso Base --> Mobile; 
+    - Tablet --> In Media Query min-width: 768px;*/
+
+    @media screen and (min-width: 768px) {
+        .card  {
+         width: calc(100% / 3);
+        }
+        .card:first-child {
+         width: calc((100% / 3) * 2);
+        }
+        .cards {
+        display: flex;
+        }
+        .lilac .container .tablet .col {
+         width: 50%;
+        }
+        .about-us .container .row .col {
+         width: 50%;
+        }
+     }
+   /* - Desktop --> In Media Query min-width: 992px;*/ 
+    
+   @media screen and (min-width: 992px) {
+    nav {
+      display: block;
+    }
+    .hamburger {
+        display: none;
+    }
+    .lilac .container .row .col {
+        width: 50%;
+    }
+    .lilac .container .tablet .col {
+        width: calc(100% / 3);
+       }
+   }
+     

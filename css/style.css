@@ -85,24 +85,4 @@ footer {
     color: white;
 }
 
-/* Ordine per Mobile First
-    - Caso Base --> Mobile; 
-    - Tablet --> In Media Query min-width: 768px;
-    - Desktop --> In Media Query min-width: 992px;*/
-    @media screen and (min-width: 768px) {
-   .card  {
-    width: calc(100% / 3);
-   }
-   .card:first-child {
-    width: calc((100% / 3) * 2);
-   }
-   .cards {
-   display: flex;
-   }
-   .lilac .container .row .col {
-    width: 50%;
-   }
-   .about-us .container .row .col {
-    width: 50%;
-   }
-}
+
