@@ -11,13 +11,13 @@
 }
 .container {
     margin: 0 auto;
-    width: 60%;
+    width: 70%;
 }
-.debug {
+/*.debug {
     border: 1px dashed black;
-    /* min-height: 100px;
-    min-width: 100px; */
-}
+     min-height: 100px;
+    min-width: 100px;
+} */
 header {
     background-color: var(--bg-color);
     margin-bottom: 20px;
@@ -37,6 +37,9 @@ nav ul li{
     text-decoration: none;
     display: inline-block;
 }
+.fa-bars {
+    font-size: 1.5em;
+}
 header a {
     color: white;
 }
@@ -46,10 +49,10 @@ main .container .row {
 .card {
     background-color: lightblue;
     border-radius: 20px;
-    margin: 10px 0px;
+    margin: 5px 5px;
 }
 .col > * {
-    margin: 20px 0;
+    margin: 20px 10px;
 }
 .card > .col {
     width: 100%;
@@ -57,7 +60,7 @@ main .container .row {
 }
 .row .col {
     text-align: center;
-} 
+}
 main > .container > .row .card h2 {
     color: var(--bg-color);
 }
@@ -98,6 +101,7 @@ section {
     background-color: white;
     color: black;
     text-align: center;
+    margin-bottom: 20px;
 }
 .lilac, .about-us button{
     background-color:var(--color);
@@ -128,7 +132,7 @@ section {
     border-radius: 20px;
     color: white;
     padding: 10px 0;
-    margin: 10px 0; 
+    margin: 10px 0;
 }
 .cards > .col {
     width: 100%;
@@ -144,10 +148,11 @@ section {
 }
 .benefits {
     padding: 10px 10px;
-    margin: 10px 0;
+    margin: 10px 5px;
 }
 .benefits button {
     padding: 10px 30px;
+    margin-right: 150px;
 }
 .about-us h3 {
     color: var(--color);
@@ -174,7 +179,7 @@ section {
     font-weight: bold;
 }
 .position button{
-    padding: 5px 10px;
+    padding: 5px 20px;
     border-radius: 10px;
     border: none;
     margin-right: 50px;
@@ -197,13 +202,13 @@ footer h2 {
 footer button {
     color: var(--color);
     background-color: white;
-    padding: 10px 10px;
-    border-radius: 10px;
+    padding: 20px 30px;
+    border-radius: 30px;
     border: none;
     font-weight: bold;
-    margin: 10px 0;  
+    margin: 10px 0;
 }
-footer li {  
+footer li {
     list-style-position:inside;
 }
 footer ul li:first-child {
