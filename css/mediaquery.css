@@ -28,6 +28,9 @@
     .hamburger {
         display: none;
     }
+    .row .card .col {
+    flex-wrap: nowrap;
+}
     .lilac .container .row .col {
         width: 50%;
     }
