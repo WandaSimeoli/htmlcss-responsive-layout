@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 :root {
     --bg-color: dodgerblue;
@@ -15,8 +15,8 @@
 }
 .debug {
     border: 1px dashed black;
-    /* min-height: 100px;
-    min-width: 100px; */
+    min-height: 100px;
+    min-width: 100px;
 }
 header {
     background-color: var(--bg-color);
@@ -31,9 +31,11 @@ header .row {
 nav {
     display: none;
 }
+main .container .row {
+        flex-wrap: wrap;
+}
 .card {
     background-color: lightblue;
-    flex-wrap: wrap;
     border-radius: 20px;
 }
 .card > .col {
@@ -63,7 +65,6 @@ nav {
     border-radius: 20px;
 }
 .cards {
-    flex-wrap: wrap;
     background-color:var(--color);
     border-radius: 20px;
     color: white;
@@ -77,19 +78,31 @@ nav {
 .container .row .col {
     width: 100%;
 }
-/* footer {
+footer {
     background-color: black;
-} */
+}
+.footer-bottom {
+    color: white;
+}
 
 /* Ordine per Mobile First
     - Caso Base --> Mobile; 
     - Tablet --> In Media Query min-width: 768px;
     - Desktop --> In Media Query min-width: 992px;*/
     @media screen and (min-width: 768px) {
-    .lilac .container .row .col {
-        width: 50%;
-    }
-    .about-us .row {
-        flex-wrap: nowrap;
-    }
+   .card  {
+    width: calc(100% / 3);
+   }
+   .card:first-child {
+    width: calc((100% / 3) * 2);
+   }
+   .cards {
+   display: flex;
+   }
+   .lilac .container .row .col {
+    width: 50%;
+   }
+   .about-us .container .row .col {
+    width: 50%;
+   }
 }
