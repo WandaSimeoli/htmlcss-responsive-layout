@@ -25,17 +25,33 @@
     nav {
       display: block;
     }
+    header a {
+        text-decoration: none;
+    }
     .hamburger {
         display: none;
     }
+    header button {
+        border-radius: 20px;
+        padding: 10px 10px;
+        border: none;
+    }
+   .lilac > .container > .row > .desktop{
+       margin: 60px 0;
+       margin-left: 20px;
+    }
+
     .row .card .col {
     flex-wrap: nowrap;
 }
     .lilac .container .row .col {
-        width: 50%;
+        width: calc((100% / 2) - 20px);
     }
-    .lilac .container .tablet .col {
-        width: calc(100% / 3);
+    .lilac .container .tablet .benefits {
+        width: calc((100% / 3) - 10px);
        }
+    footer ul {
+       margin-left: 150px;
+    }
    }
      

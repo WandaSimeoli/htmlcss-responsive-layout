@@ -107,9 +107,6 @@ section {
     background-color:var(--color);
     color: white;
 }
- {
-    padding: 20px 0;
-}
 .lilac .row {
     flex-wrap: wrap;
 }
