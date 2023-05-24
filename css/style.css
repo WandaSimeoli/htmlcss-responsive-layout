@@ -15,11 +15,13 @@
 }
 .debug {
     border: 1px dashed black;
-    min-height: 100px;
-    min-width: 100px;
+    /* min-height: 100px;
+    min-width: 100px; */
 }
 header {
     background-color: var(--bg-color);
+    margin-bottom: 20px;
+    padding: 10px 20px;
 }
 .flex {
     display: flex;
@@ -31,12 +33,23 @@ header .row {
 nav {
     display: none;
 }
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+}
+header a {
+    color: white;
+}
 main .container .row {
         flex-wrap: wrap;
 }
 .card {
     background-color: lightblue;
     border-radius: 20px;
+    margin: 10px 0px;
+}
+.col > * {
+    margin: 20px 0;
 }
 .card > .col {
     width: 100%;
@@ -48,14 +61,21 @@ main .container .row {
 main > .container > .row .card h2 {
     color: var(--bg-color);
 }
+section {
+    margin: 30px 0;
+}
 .row > .card > .col > div > button {
     background-color: var(--bg-color);
     color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 20px;
 }
 .row .card .col {
     flex-wrap: wrap;
 }
- main .col > .fa-solid {
+.card .col > .fa-solid {
     font-size: 3em;
     color: var(--bg-color);
 }
@@ -67,15 +87,24 @@ main > .container > .row .card h2 {
 }
 .white button {
     background-color: var(--color);
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+}
+.white button > * {
+    font-size: 1.5em;
 }
 .white{
     background-color: white;
     color: black;
     text-align: center;
 }
-.lilac {
+.lilac, .about-us button{
     background-color:var(--color);
     color: white;
+}
+ {
+    padding: 20px 0;
 }
 .lilac .row {
     flex-wrap: wrap;
@@ -87,10 +116,19 @@ main > .container > .row .card h2 {
 .testimonial, .lilac h2 {
     text-align: center;
 }
-.cards {
+.testimonial {
+    line-height: 2em;
+}
+.testimonial img, .about-us img {
+    border-radius: 50%;
+    padding: 0 20px;
+}
+.cards{
     background-color:var(--color);
     border-radius: 20px;
     color: white;
+    padding: 10px 0;
+    margin: 10px 0; 
 }
 .cards > .col {
     width: 100%;
@@ -104,18 +142,85 @@ main > .container > .row .card h2 {
 .about-us .row {
     flex-wrap: wrap;
 }
+.benefits {
+    padding: 10px 10px;
+    margin: 10px 0;
+}
+.benefits button {
+    padding: 10px 30px;
+}
 .about-us h3 {
     color: var(--color);
     text-align: left;
+}
+.about-us .fa-solid{
+    color: var(--color);
+    font-size: 3em;
+}
+.about-us {
+    line-height: 2em;
+}
+.position {
+    position: relative;
+    margin-right: 30px;
+}
+.position .fa-quote-left {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.position p {
+    color: var(--color);
+    font-weight: bold;
+}
+.position button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-right: 50px;
 }
 .container .row .col {
     width: 100%;
 }
 footer {
     background-color: black;
+    text-align: center;
+}
+footer .container, footer h3, footer p {
+    padding: 20px 0;
+}
+footer h2 {
+    color: orange;
+    font-size: 3em;
+    padding: 20px 0
+}
+footer button {
+    color: var(--color);
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    margin: 10px 0;  
+}
+footer li {  
+    list-style-position:inside;
+}
+footer ul li:first-child {
+    list-style: none;
+}
+footer a {
+    color: white;
+}
+footer ul {
+   flex-wrap: wrap;
+   margin-left: 20px;
 }
 .footer-bottom {
     color: white;
+}
+.footer-bottom a {
+    color: var(--color);
 }
 
 
